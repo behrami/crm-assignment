@@ -80,7 +80,41 @@ class Contact
      end
 
    elsif search_type == "last_name"
-     @@contact_list.each do |contact|
+     @@co# p contact.note = 'Loves HTML & CSS'
+# p contact
+puts
+
+p test_co# p contact.note = 'Loves HTML & CSS'
+# p contact
+puts
+
+p test_contact = Contact.create('Bit', 'Tester', 'bittest@gmail.com', 'Loves coding')
+p test_contact2 = Contact.create('Betty', 'Maker', 'bettymakes@gmail.com', 'Loves Pokemon')
+#p Contact.add_phone_book(test_contact)
+#p Contact.all
+Contact.find(1)
+Contact.find_by("first_name", "Betty")
+
+p test_contact2.update("first_name", "Behram")
+#p Contact.delete_all
+
+p test_contact.full_name
+
+p test_contact.delete
+ntact = Contact.create('Bit', 'Tester', 'bittest@gmail.com', 'Loves coding')
+p test_contact2 = Contact.create('Betty', 'Maker', 'bettymakes@gmail.com', 'Loves Pokemon')
+#p Contact.add_phone_book(test_contact)
+#p Contact.all
+Contact.find(1)
+Contact.find_by("first_name", "Betty")
+
+p test_contact2.update("first_name", "Behram")
+#p Contact.delete_all
+
+p test_contact.full_name
+
+p test_contact.delete
+ntact_list.each do |contact|
        if contact.last_name == search
          return contact
        end
@@ -160,20 +194,20 @@ end
 ##########################################testing
 # p contact = Contact.new('Betty', 'Maker', 'bettymakes@gmail.com', 'Loves Pokemon')
 # p contact.email # => 'bettymakes@gmail.com'
-# p contact.note = 'Loves HTML & CSS'
-# p contact
-puts
-
-p test_contact = Contact.create('Bit', 'Tester', 'bittest@gmail.com', 'Loves coding')
-p test_contact2 = Contact.create('Betty', 'Maker', 'bettymakes@gmail.com', 'Loves Pokemon')
-#p Contact.add_phone_book(test_contact)
-#p Contact.all
-Contact.find(1)
-Contact.find_by("first_name", "Betty")
-
-p test_contact2.update("first_name", "Behram")
-#p Contact.delete_all
-
-p test_contact.full_name
-
-p test_contact.delete
+# # p contact.note = 'Loves HTML & CSS'
+# # p contact
+# puts
+#
+# p test_contact = Contact.create('Bit', 'Tester', 'bittest@gmail.com', 'Loves coding')
+# p test_contact2 = Contact.create('Betty', 'Maker', 'bettymakes@gmail.com', 'Loves Pokemon')
+# #p Contact.add_phone_book(test_contact)
+# #p Contact.all
+# Contact.find(1)
+# Contact.find_by("first_name", "Betty")
+#
+# p test_contact2.update("first_name", "Behram")
+# #p Contact.delete_all
+#
+# p test_contact.full_name
+#
+# p test_contact.delete
